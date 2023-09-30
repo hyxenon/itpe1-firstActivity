@@ -1,1 +1,46 @@
-<p>registration works!</p>
+<div class="flex">
+
+    <div class="bg-gray-700 w-64 min-h-screen flex flex-col">
+        <div class="flex  justify-start items-center gap-4 pt-4 pl-4 ">
+            <div class="flex w-[5rem]">
+                <img class="rounded-full cursor-pointer" src="../../../assets/JS_Logo.png" alt="">
+            </div>
+            <div>
+                <p class="text-white text-3xl">JS</p>
+                <p class="text-white text-3xl">BSIT 3-2</p>
+            </div>
+        </div>
+        <div class="bg-gray-400 rounded-md w-11/12 h-0.5 mx-auto mt-4"></div>    
+    </div>
+    
+<div class="flex-1 bg-gray-200">
+    <div class="  h-[7.1rem] flex justify-end items-center pr-16 shadow-lg bg-white">
+        <!-- <div class="flex items-center">
+            <a routerLink="/registration" class="text-lg font-bold cursor-pointer hover:text-gray-700 transition-all ">Register</a>
+        </div> -->
+    </div>
+
+    <div class="flex flex-col justify-center items-center bg-white mt-4 w-[30rem] mx-auto rounded-md py-8 pb-16 px-8 border h-auto border-black">
+        <h1 class="font-bold text-3xl mt-2">Sign Up</h1>
+        <div class="flex flex-col w-full px-8">
+            <form class="mt-8" action="">
+                <div class="flex flex-col">
+                    <label for="username">Username</label>
+                    <input class="border-b border-b-black py-2 px-1 mt-2 text-sm" id="username" name="username" type="text" placeholder="Type your username" required>
+                </div>
+                <div class="flex flex-col mt-8">
+                    <label for="password">Password</label>
+                    <input class="border-b border-b-black py-2 px-1 mt-2 text-sm" id="password" name="password" type="password" placeholder="Type your password" required>
+                </div>
+                <div class="flex flex-col mt-8">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input class="border-b border-b-black py-2 px-1 mt-2 text-sm" id="confirm-password" name="confirm-password" type="password" placeholder="Confirm your password " required>
+                </div>
+                
+                <button routerLink="/dashboard" class="uppercase bg-gray-600 px-4 py-2.5 w-full mt-8 rounded-md text-sm hover:bg-gray-400 hover:text-black transition-all text-white">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+    
+</div>

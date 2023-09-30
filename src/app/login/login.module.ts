@@ -5,13 +5,17 @@ import { LoginRoutingModule } from './login-routing.module';
 
 
 
+
+
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
+    
+    
   ],
   imports: [
     CommonModule,
-    LoginRoutingModule
+    LoginRoutingModule,
   ]
 })
 export class LoginModule { }
