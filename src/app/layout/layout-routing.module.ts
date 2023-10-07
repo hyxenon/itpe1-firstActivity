@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserManagementComponent } from './user-management/user-management.component';
-import { ProductComponent } from './product/product.component';
 
 
 
@@ -14,13 +11,16 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       {
-        path: 'dashboard', component: DashboardComponent
+        path: 'dashboard',
+        loadChildren: () => import('./dashboard/dashboard.module').then(mod => mod.DashboardModule)
       },
       {
-        path: 'user-management', component: UserManagementComponent
+        path: 'user-management',
+        loadChildren: () => import('./user-management/user-management.module').then(mod => mod.UserManagementModule)
       },
       {
-        path: 'product', component: ProductComponent
+        path: 'product',
+        loadChildren: () => import('./product/product.module').then(mod => mod.ProductModule)
       }
     ]
   },
