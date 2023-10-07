@@ -6,6 +6,7 @@ import { TopnavComponent } from '../components/topnav/topnav.component';
 import { SidenavComponent } from '../components/sidenav/sidenav.component';
 import { ScreenComponent } from '../components/screen/screen.component';
 import { LogoComponent } from '../components/logo/logo.component';
+import { ProductComponent } from './product/product.component';
 
 
 
@@ -16,7 +17,8 @@ import { LogoComponent } from '../components/logo/logo.component';
     TopnavComponent,
     SidenavComponent,
     ScreenComponent,
-    LogoComponent
+    LogoComponent,
+    ProductComponent
   ],
   imports: [
     CommonModule,
