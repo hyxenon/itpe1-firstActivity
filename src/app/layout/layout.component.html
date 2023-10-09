@@ -1,8 +1,9 @@
-<div class="flex ">
-    <app-sidenav [isToggle]="isToggle"></app-sidenav>
-    <div class="w-full max-h-screen">
+<div class="flex min-h-screen">
+    <app-sidenav [isToggle]="isToggle" class=""></app-sidenav>
+    <div class="w-full min-h-screen flex flex-col">
         <app-topnav (onToggleSideBar)="onToggleBar($event)"></app-topnav>
-        <app-screen></app-screen>
+        <div class="flex-1">
+            <app-screen></app-screen>
+        </div>
     </div>
-    
 </div>
