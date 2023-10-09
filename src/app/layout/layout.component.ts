@@ -9,7 +9,15 @@ export class LayoutComponent implements OnInit {
 
   constructor() { }
 
+  isToggle: boolean = false;
+
   ngOnInit(): void {
   }
 
+  onToggleBar(event: any){
+    this.isToggle = !this.isToggle
+    console.log(this.isToggle);
+    
+    
+  }
 }

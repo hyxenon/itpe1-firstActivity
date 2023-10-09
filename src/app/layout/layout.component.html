@@ -1,7 +1,7 @@
 <div class="flex ">
-    <app-sidenav></app-sidenav>
+    <app-sidenav [isToggle]="isToggle"></app-sidenav>
     <div class="w-full max-h-screen">
-        <app-topnav></app-topnav>
+        <app-topnav (onToggleSideBar)="onToggleBar($event)"></app-topnav>
         <app-screen></app-screen>
     </div>
     
