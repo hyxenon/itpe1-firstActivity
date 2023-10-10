@@ -1,4 +1,4 @@
-<div *ngIf="isToggle === false" class="bg-gray-700 w-64 min-h-screen flex flex-col">
+<div *ngIf="isToggle === false" class="bg-gray-700 w-64 h-full flex flex-col">
     <app-logo></app-logo>
     <div class="bg-gray-400 rounded-md w-11/12 h-0.5 mx-auto mt-4"></div>
     <div class="flex flex-col h-max flex-grow">
@@ -9,7 +9,11 @@
             </a>
             <a routerLink="/user-management" class="flex mt-4 gap-2 pl-2 py-1 items-center cursor-pointer w-[90%] mx-auto rounded-lg hover:bg-sky-500 transition-all">
                 <i class="bi bi-person-vcard text-white text-xl"></i>
-                <p class="text-white text-lg">User Management</p>
+                <p class="text-white text-lg">User</p>
+            </a>
+            <a routerLink="/product" class="flex mt-4 gap-2 pl-2 py-1 items-center cursor-pointer w-[90%] mx-auto rounded-lg hover:bg-sky-500 transition-all">
+                <i class="bi bi-bag-check-fill text-white text-xl"></i>
+                <p class="text-white text-lg">Products</p>
             </a>
         </div>
     </div>
@@ -25,5 +29,5 @@
             <p class="text-white text-base">Logout</p>
         </a>
     </div>
-
 </div>
+
