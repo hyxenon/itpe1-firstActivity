@@ -3,15 +3,15 @@
     <div class="bg-gray-400 rounded-md w-11/12 h-0.5 mx-auto mt-4"></div>
     <div class="flex flex-col h-max flex-grow">
         <div class="menus">
-            <a routerLink="/dashboard" class="flex mt-4 gap-2 pl-2 py-1 items-center cursor-pointer w-[90%] mx-auto rounded-lg hover:bg-sky-500 transition-all">
+            <a [ngClass]="links['dashboard'] === true ? 'active-link' : ''" routerLink="/dashboard" class="flex mt-4 gap-2 pl-2 py-1 items-center cursor-pointer w-[90%] mx-auto rounded-lg hover:bg-sky-500 transition-all" (click)="setActiveLink('dashboard')">
                 <i class="bi bi-speedometer text-white text-xl"></i>
                 <p class="text-white text-lg">Dashboard</p>
             </a>
-            <a routerLink="/user-management" class="flex mt-4 gap-2 pl-2 py-1 items-center cursor-pointer w-[90%] mx-auto rounded-lg hover:bg-sky-500 transition-all">
+            <a [ngClass]="links['user-management'] === true ? 'active-link' : ''" routerLink="/user-management" class="flex mt-4 gap-2 pl-2 py-1 items-center cursor-pointer w-[90%] mx-auto rounded-lg hover:bg-sky-500 transition-all" (click)="setActiveLink('user-management')">
                 <i class="bi bi-person-vcard text-white text-xl"></i>
                 <p class="text-white text-lg">User</p>
             </a>
-            <a routerLink="/product" class="flex mt-4 gap-2 pl-2 py-1 items-center cursor-pointer w-[90%] mx-auto rounded-lg hover:bg-sky-500 transition-all">
+            <a [ngClass]="links['product'] === true ? 'active-link' : ''" routerLink="/product" class="flex mt-4 gap-2 pl-2 py-1 items-center cursor-pointer w-[90%] mx-auto rounded-lg hover:bg-sky-500 transition-all" (click)="setActiveLink('product')">
                 <i class="bi bi-bag-check-fill text-white text-xl"></i>
                 <p class="text-white text-lg">Products</p>
             </a>
