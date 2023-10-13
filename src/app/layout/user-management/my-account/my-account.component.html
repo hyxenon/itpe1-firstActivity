@@ -1,0 +1,71 @@
+<div class="py-5 pl-4">
+    <h1 class="font-bold">My Profile</h1>
+    <p>Manage and protect your account</p>
+</div>
+<div class="w-full bg-gray-300 h-[1px] "></div>
+<div class="flex">
+    <div class="w-full flex flex-col px-8 py-8">
+        <form class="flex flex-col w-full h-full px-4 gap-4">
+             <div class="flex  w-full gap-4 items-center">
+                <h1 class="text-gray-600  w-[150px] text-end">Username</h1>
+                <input type="text" placeholder="Change your username" class="outline-none border border-gray-400 w-full py-2 px-4 text-sm">
+             </div>
+             <div class="flex  w-full gap-4 items-center ">
+                <h1 class="text-gray-600 w-[150px] text-end">Name</h1>
+                <input type="text" placeholder="Change your name" class="outline-none border border-gray-400 w-full py-2 px-4 text-sm">
+             </div>
+             <div class="flex  w-full gap-4 items-center ">
+                <h1 class="text-gray-600 w-[150px] text-end">Email</h1>
+                <input type="email" placeholder="Change your email" class="outline-none border border-gray-400 w-full py-2 px-4 text-sm">
+             </div>
+             <div class="flex  w-full gap-4 items-center ">
+                <h1 class="text-gray-600 w-[150px] text-end">Phone Number</h1>
+                <input type="tel" placeholder="********385" class="outline-none border border-gray-400 w-full py-2 px-4 text-sm">
+             </div>
+             <!-- Gender Radio Button -->
+             <div class="flex  w-full gap-4 items-center ">
+                <h1 class="text-gray-600 w-[150px] text-end">Gender</h1>
+                <div class="w-full flex gap-4">
+                    <div class="flex justify-center items-center gap-2">
+                        <input id="male" type="radio" name="gender-radio-group">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="flex justify-center items-center gap-2">
+                        <input id="female" type="radio" name="gender-radio-group">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="flex justify-center items-center gap-2">
+                        <input id="other" type="radio" name="gender-radio-group">
+                        <label for="other">Other</label>
+                 </div>
+                </div>
+             </div>
+             <!-- Date of Birth -->
+             <div class="flex  w-full gap-4 items-center mt-5">
+                <h1 class="text-gray-600 w-[150px] text-end">Date of Birth</h1>
+                <div class="w-full flex gap-4">
+                    <app-DatePicker></app-DatePicker>
+                </div>
+             </div>
+             <div class="flex  w-full gap-4 items-center">
+                <h1 class=" w-[150px] "></h1>
+                <button type="submit" class="bg-gray-700 py-2 px-6 rounded-sm text-white transition-all hover:bg-gray-600">Save</button>
+             </div>
+             
+        </form>
+       
+    </div>
+
+    <div class="flex flex-col w-[30%] items-center mt-8 border-l border-gray-400 px-4 py-4">
+        <div class="w-[35%] ">
+            <img  class="rounded-full" src="../../../../assets/profile pic.jpg" alt="">
+        </div>
+        <div class="py-2 px-4 border mt-6 border-gray-200 cursor-pointer hover:bg-gray-100 transition-all">
+            <p>Select Image</p>
+        </div>
+        <div class="mt-4">
+            <p class="text-gray-400">File size: maximum 1 MB</p>
+            <p class="text-gray-400">File extension: .JPEG, .PNG</p>
+        </div>
+    </div>
+</div>
