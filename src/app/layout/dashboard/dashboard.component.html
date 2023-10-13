@@ -41,14 +41,14 @@
        
        <div class="flex h-[500px]  w-full gap-5 mt-5 py-4 pr-4">
         <!-- Sales by Category -->
-        <div class="w-[50%] flex flex-col justify-center items-center border border-gray-300 p-4 shadow-lg ">
+        <div class="w-[50%] flex flex-col justify-center items-center border border-gray-300 px-4 py-8 shadow-lg ">
             <h1 class="font-bold">Total Percentage Sales by Category</h1>
             <canvas baseChart [data]="salesByCategory" type="pie"></canvas>
         </div>
         <!-- Profit -->
         <div class="w-[50%] flex-col flex justify-center items-center border border-gray-300 p-4 shadow-lg ">
             <h1 class="font-bold">Total Sales By Category</h1>
-            <canvas baseChart [data]="salesByCategory" type="line"></canvas>
+            <canvas baseChart [data]="salesByCategoryLine" type="line"></canvas>
         </div>
        </div>
     </div>

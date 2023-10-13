@@ -33,9 +33,19 @@ export class DashboardComponent implements OnInit {
     labels: ['Mobiles & Gadgets', 'Laptops & Computers', "Men's Apparel", "Women's Apparel", 'Men Shoes', 'Women Shoes', 'Makeup & Fragnances', 'Health & Personal Care', "Men's Bags & Accessories", "Women's Bags & Accessories"],
     datasets:[{
       data: [10,5,20,21,5,10,50,30,20,100],
-      label: 'Sales by Category'
+      label: 'Sales by Category',
     },
-    
+  ]
+  }
+
+  salesByCategoryLine = {
+    labels: ['Mobiles & Gadgets', 'Laptops & Computers', "Men's Apparel", "Women's Apparel", 'Men Shoes', 'Women Shoes', 'Makeup & Fragnances', 'Health & Personal Care', "Men's Bags & Accessories", "Women's Bags & Accessories"],
+    datasets:[{
+      data: [10,5,20,21,5,10,50,30,20,100],
+      label: 'Sales by Category',
+      backgroundColor: 'blue',
+      borderColor: 'blue'
+    },
   ]
   }
 
