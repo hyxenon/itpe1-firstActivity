@@ -1,19 +1,24 @@
-<div class="w-full h-full flex flex-col  p-8">
-    <div class="flex gap-4">
-        <div class="bg-green-300 w-[250px] h-[150px] flex justify-center items-center gap-6 rounded shadow-md border border-gray-300 cursor-pointer transition-all hover:bg-green-200">
-            <i class="bi bi-basket-fill text-4xl"></i>
-            <div>
-                <h1 class="text-center text-xl font-bold">80</h1>
-                <h1 class="text-xl">Products Sold</h1>
+<div class="w-full h-full flex flex-col p-8">
+    <div class="flex gap-4 justify-between">
+        <div class="flex gap-4">
+            <div class="bg-green-300 w-[250px] h-[150px] flex justify-center items-center gap-6 rounded shadow-md border border-gray-300 cursor-pointer transition-all hover:bg-green-200">
+                <i class="bi bi-basket-fill text-4xl"></i>
+                <div>
+                    <h1 class="text-center text-xl font-bold">80</h1>
+                    <h1 class="text-xl">Products Sold</h1>
+                </div>
             </div>
-        </div>
-        <div class="bg-green-300 w-[250px] h-[150px] flex justify-center items-center gap-6 rounded shadow-md border border-gray-300 cursor-pointer transition-all hover:bg-green-200">
-            <i class="bi bi-currency-exchange text-4xl"></i>
-            <div>
-                <h1 class="text-center text-xl font-bold">100 Pesos</h1>
-                <h1 class="text-xl">Total Revenue</h1>
+            <div class="bg-green-300 w-[250px] h-[150px] flex justify-center items-center gap-6 rounded shadow-md border border-gray-300 cursor-pointer transition-all hover:bg-green-200">
+                <i class="bi bi-currency-exchange text-4xl"></i>
+                <div>
+                    <h1 class="text-center text-xl font-bold">100 Pesos</h1>
+                    <h1 class="text-xl">Total Revenue</h1>
+                </div>
             </div>
+            
         </div>
+        
+        <app-latest-costumer-card></app-latest-costumer-card>
     </div>
     <!-- Graphs -->
     <div class="w-[90%] flex flex-col justify-center items-center  py-8">
@@ -46,6 +51,6 @@
             <canvas baseChart [data]="salesByCategory" type="line"></canvas>
         </div>
        </div>
-        
     </div>
+    
 </div>

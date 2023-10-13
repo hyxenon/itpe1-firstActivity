@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { NgChartsModule } from 'ng2-charts';
+import { LatestCostumerCardComponent } from './latest-costumer-card/latest-costumer-card.component';
 
 
 
@@ -11,6 +12,7 @@ import { NgChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     DashboardComponent,
+    LatestCostumerCardComponent,
     
   ],
   imports: [
