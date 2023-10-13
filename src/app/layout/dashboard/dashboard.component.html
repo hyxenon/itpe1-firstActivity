@@ -1,1 +1,51 @@
-<p>dashboard works!</p>
+<div class="w-full h-full flex flex-col  p-8">
+    <div class="flex gap-4">
+        <div class="bg-green-300 w-[250px] h-[150px] flex justify-center items-center gap-6 rounded shadow-md border border-gray-300 cursor-pointer transition-all hover:bg-green-200">
+            <i class="bi bi-basket-fill text-4xl"></i>
+            <div>
+                <h1 class="text-center text-xl font-bold">80</h1>
+                <h1 class="text-xl">Products Sold</h1>
+            </div>
+        </div>
+        <div class="bg-green-300 w-[250px] h-[150px] flex justify-center items-center gap-6 rounded shadow-md border border-gray-300 cursor-pointer transition-all hover:bg-green-200">
+            <i class="bi bi-currency-exchange text-4xl"></i>
+            <div>
+                <h1 class="text-center text-xl font-bold">100 Pesos</h1>
+                <h1 class="text-xl">Total Revenue</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Graphs -->
+    <div class="w-[90%] flex flex-col justify-center items-center  py-8">
+        <div class="flex h-[500px]  w-full gap-5  py-4 pr-4"> 
+            <!-- Sales by Months -->
+            <div class="w-[50%] flex flex-col justify-center items-center border border-gray-300 p-4 shadow-lg ">
+                <h1 class="font-bold">Monthly Sales Chart</h1>
+                <canvas width="" baseChart [data]="salesByMonth" type="bar">
+
+                </canvas>        
+            </div>
+            <!-- Sales by Week -->
+            <div class="w-[50%] flex flex-col justify-center items-center border border-gray-300 p-4 shadow-lg ">
+                <h1 class="font-bold">Daily Sales Chart</h1>
+                <canvas baseChart [data]="salesPerWeekData" type="bar">
+
+                </canvas>  
+            </div>
+        </div>
+       
+       <div class="flex h-[500px]  w-full gap-5 mt-5 py-4 pr-4">
+        <!-- Sales by Category -->
+        <div class="w-[50%] flex flex-col justify-center items-center border border-gray-300 p-4 shadow-lg ">
+            <h1 class="font-bold">Total Percentage Sales by Category</h1>
+            <canvas baseChart [data]="salesByCategory" type="pie"></canvas>
+        </div>
+        <!-- Profit -->
+        <div class="w-[50%] flex-col flex justify-center items-center border border-gray-300 p-4 shadow-lg ">
+            <h1 class="font-bold">Total Sales By Category</h1>
+            <canvas baseChart [data]="salesByCategory" type="line"></canvas>
+        </div>
+       </div>
+        
+    </div>
+</div>
