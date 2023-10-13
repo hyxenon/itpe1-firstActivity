@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardComponent } from '../dashboard/dashboard.component';
+
 import { ProductComponent } from './product.component';
 import { ProductRoutingModule } from './product-routing.module';
+import { ProductItemCardComponent } from './product-item-card/product-item-card.component';
+import { CategoriesCardComponent } from './categories-card/categories-card.component';
 
 
 
 @NgModule({
   declarations: [
-    ProductComponent
+    ProductComponent,
+    ProductItemCardComponent,
+    CategoriesCardComponent
   ],
   imports: [
     CommonModule,

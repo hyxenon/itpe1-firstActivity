@@ -1,0 +1,18 @@
+
+<div class="w-[250px] h-[350px] flex flex-col max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex justify-center items-center" >
+        <img class="p-8 rounded-t-lg w-[150px] h-[150px] " [src]="img" alt="product image" />
+    </div>
+    <div class="px-5 pb-5 flex-1 h-[138px]">
+        <a>
+            <h5 class="text-sm font-semibold tracking-tight text-gray-900 dark:text-white">{{ productName }}</h5>
+        </a>
+        <div class="flex items-center mt-2.5 mb-5">
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">{{ rating }}</span>
+        </div>
+    </div>
+    <div class="flex items-center justify-between px-5 pb-5 mt-auto">
+        <span class="text-xl font-bold text-gray-900 dark:text-white">${{ price }}</span>
+        <a  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer">Add to cart</a>
+    </div>
+</div>
