@@ -9,6 +9,9 @@
             <div *ngIf="categoryTitle === 'Mobile & Gadgets'" class="px-8 flex gap-4 mt-4 flex-wrap">
                 <app-product-item-card *ngFor="let item of mobileAndGadgets" [img]="item.img" [productName]="item.productName" [price]="item.price" [rating]="item.rating"></app-product-item-card>
             </div>
+            <div *ngIf="categoryTitle === 'Laptop & Computers'" class="px-8 flex gap-4 mt-4 flex-wrap">
+                <app-product-item-card *ngFor="let item of laptopAndComputers" [img]="item.img" [productName]="item.productName" [price]="item.price" [rating]="item.rating"></app-product-item-card>
+            </div>
         
     </div>
 </div>

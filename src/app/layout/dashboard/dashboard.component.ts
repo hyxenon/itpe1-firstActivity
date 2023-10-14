@@ -13,6 +13,7 @@ export class DashboardComponent implements OnInit {
       {
         data: [89, 34, 43, 54, 28, 74, 93],
         label: 'Sales Per Week',
+        backgroundColor: '#449DD1'
       }
     ]
 
@@ -21,8 +22,9 @@ export class DashboardComponent implements OnInit {
   salesByMonth = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     datasets:[{
-      data: [1,2,3,4,5,6,7,8,9,10,11,12],
-      label: 'Monthly Sales'
+      data: [132,302,153,200,432,431,331,432,531,323,300,400],
+      label: 'Monthly Sales',
+      backgroundColor: '#449DD1'
     },
     
   ]
@@ -43,8 +45,8 @@ export class DashboardComponent implements OnInit {
     datasets:[{
       data: [10,5,20,21,5,10,50,30,20,100],
       label: 'Sales by Category',
-      backgroundColor: 'blue',
-      borderColor: 'blue'
+      backgroundColor: '#449DD1',
+      borderColor: '#449DD1'
     },
   ]
   }

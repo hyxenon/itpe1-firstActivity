@@ -22,13 +22,13 @@
             <div class="flex flex-col">
                 <div class="flex items-center gap-3">
                     <i class="bi bi-person text-2xl"></i>
-                    <h1 class="font-bold cursor-pointer hover:text-gray-400 transition-all">My Account</h1>
+                    <h1 class="font-bold cursor-pointer hover:text-gray-400 transition-all" (click)="onLinkClick('profile')">My Account</h1>
                 </div>
                 <div class="flex flex-col pl-9 mt-2 gap-1">
-                    <p class="cursor-pointer hover:text-gray-400 transition-all">Profile</p>
-                    <p class="cursor-pointer hover:text-gray-400 transition-all">Banks & Cards</p>
-                    <p class="cursor-pointer hover:text-gray-400 transition-all">Addresses</p>
-                    <p class="cursor-pointer hover:text-gray-400 transition-all">Change Password</p>
+                    <p [ngClass]="onShowLinkContent === 'profile' ? 'link-active': ''" class="cursor-pointer hover:text-gray-400 transition-all" (click)="onLinkClick('profile')">Profile</p>
+                    <p [ngClass]="onShowLinkContent === 'bank-cards' ? 'link-active': ''" class="cursor-pointer hover:text-gray-400 transition-all" (click)="onLinkClick('bank-cards')">Banks & Cards</p>
+                    <p [ngClass]="onShowLinkContent === 'address' ? 'link-active': ''" class="cursor-pointer hover:text-gray-400 transition-all" (click)="onLinkClick('address')">Addresses</p>
+                    <p [ngClass]="onShowLinkContent === 'change-password' ? 'link-active': ''" class="cursor-pointer hover:text-gray-400 transition-all" (click)="onLinkClick('change-password')">Change Password</p>
                 </div>
             </div>
 
@@ -36,7 +36,7 @@
             <div class="flex flex-col mt-2">
                 <div class="flex items-center gap-3">
                     <i class="bi bi-clipboard2 text-2xl"></i>
-                    <h1 class="font-bold cursor-pointer hover:text-gray-400 transition-all">My Purchase/Sell</h1>
+                    <h1 [ngClass]="onShowLinkContent === 'purchase-sell' ? 'link-active': ''" class="font-bold cursor-pointer hover:text-gray-400 transition-all" (click)="onLinkClick('purchase-sell')">My Purchase/Sell</h1>
                 </div>
                 <div>
                     
@@ -46,7 +46,7 @@
             <div class="flex flex-col mt-2">
                 <div class="flex items-center gap-3">
                     <i class="bi bi-bell text-2xl"></i>
-                    <h1 class="font-bold cursor-pointer hover:text-gray-400 transition-all">Notification</h1>
+                    <h1 [ngClass]="onShowLinkContent === 'notification' ? 'link-active': ''" class="font-bold cursor-pointer hover:text-gray-400 transition-all" (click)="onLinkClick('notification')">Notification</h1>
                 </div>
                 <div>
                     
@@ -59,7 +59,24 @@
     <!--  -->
     <div class="flex-1 flex justify-center p-4">
         <div class="bg-white border border-gray-300 shadow-xl w-[80%] h-[80%] rounded-md p-4 flex flex-col">
-            <app-my-account></app-my-account>
+            <div *ngIf="onShowLinkContent === 'profile'">
+                <app-my-account></app-my-account>
+            </div>
+            <div *ngIf="onShowLinkContent === 'bank-cards'">
+                <app-bank-cards></app-bank-cards>
+            </div>
+            <div *ngIf="onShowLinkContent === 'address'">
+                <app-addresses></app-addresses>
+            </div>
+            <div *ngIf="onShowLinkContent === 'change-password'">
+                <app-change-password></app-change-password>
+            </div>
+            <div *ngIf="onShowLinkContent === 'purchase-sell'">
+                <app-purchase-sell></app-purchase-sell>
+            </div>
+            <div *ngIf="onShowLinkContent === 'notification'">
+                <app-notification></app-notification>
+            </div>
         </div>
         
     </div>
