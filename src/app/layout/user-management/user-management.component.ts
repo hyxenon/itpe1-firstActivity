@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserManagementComponent implements OnInit {
 
+  onShowLinkContent: string = 'profile'
+
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onLinkClick(link: string){
+    this.onShowLinkContent = link
   }
 
 }

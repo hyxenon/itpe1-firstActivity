@@ -3,12 +3,17 @@
         <app-categories-card (categoryClick)="onCategoryClick($event)"></app-categories-card>
     </div>
 
-    <div class="bg-white w-full h-full mt-4 rounded-md flex flex-col">
+    <div class="bg-white w-full h-full mt-4 rounded-md flex flex-col pb-16">
         <h1 class="text-center text-2xl font-bold mt-8">{{ categoryTitle }}</h1>
-        
-            <div *ngIf="categoryTitle === 'Mobile & Gadgets'" class="px-8 flex gap-4 mt-4 flex-wrap">
+
+        <div class="">
+            <div *ngIf="categoryTitle === 'Mobile & Gadgets'" class="px-36 py-4 flex gap-4 mt-4 flex-wrap ">
                 <app-product-item-card *ngFor="let item of mobileAndGadgets" [img]="item.img" [productName]="item.productName" [price]="item.price" [rating]="item.rating"></app-product-item-card>
             </div>
+            <div *ngIf="categoryTitle === 'Laptop & Computers'" class="px-36 py-4 flex gap-4 mt-4 flex-wrap">
+                <app-product-item-card *ngFor="let item of laptopAndComputers" [img]="item.img" [productName]="item.productName" [price]="item.price" [rating]="item.rating"></app-product-item-card>
+            </div>
+        </div>
         
     </div>
 </div>

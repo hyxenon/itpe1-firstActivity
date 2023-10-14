@@ -5,6 +5,12 @@ import { UserManagementRoutingModule } from './user-management-routing.module';
 import { MyAccountComponent } from './my-account/my-account.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
 import { FormsModule } from '@angular/forms';
+import { ProfileComponent } from './my-account/profile/profile.component';
+import { BankCardsComponent } from './my-account/bank-cards/bank-cards.component';
+import { AddressesComponent } from './my-account/addresses/addresses.component';
+import { ChangePasswordComponent } from './my-account/change-password/change-password.component';
+import { PurchaseSellComponent } from './purchase-sell/purchase-sell.component';
+import { NotificationComponent } from './notification/notification.component';
 
 
 
@@ -12,7 +18,13 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     UserManagementComponent,
     MyAccountComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    ProfileComponent,
+    BankCardsComponent,
+    AddressesComponent,
+    ChangePasswordComponent,
+    PurchaseSellComponent,
+    NotificationComponent
   ],
   imports: [
     CommonModule,
