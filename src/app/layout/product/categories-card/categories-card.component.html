@@ -1,7 +1,7 @@
 <div class="flex flex-col mt-8 border border-gray-400 p-8 bg-white shadow-xl rounded-lg">
     <h1 class="uppercase text-gray-700">Categories</h1>
     <hr class="mt-4">
-    <div class="flex flex-wrap">
+    <!-- <div class="flex flex-wrap">
         <div *ngFor="let category of categories" class="">
             <div class="border border-gray-200 p-2 flex flex-col items-center justify-center gap-2 w-[120px] h-[200px] cursor-pointer hover:border-gray-400 transition-all" (click)="onCategoryClick(category.categoryName)">
                 <div class="">
@@ -10,5 +10,14 @@
                 <h1 class="text-center">{{ category.categoryName}}</h1>
             </div>
         </div>
+    </div> -->
+    <div class="flex flex-wrap gap-4 mt-4 py-2 px-8">
+        <div *ngFor="let category of categories" class="py-2 px-4 cursor-pointer border-b border-gray-300 shadow-lg link-color text-white transition-all" (click)="onCategoryClick(category.categoryName)">
+            <div class="">
+                <h1>{{ category.categoryName }}</h1>
+            </div>
+    
+        </div>
     </div>
+    
 </div>
