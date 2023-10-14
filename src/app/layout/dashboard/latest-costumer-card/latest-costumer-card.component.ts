@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-latest-costumer-card',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./latest-costumer-card.component.scss']
 })
 export class LatestCostumerCardComponent implements OnInit {
-
+  @Output() onModalClick = new EventEmitter<any>()
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onClickModal(){
+    this.onModalClick.emit()
+  }
 }

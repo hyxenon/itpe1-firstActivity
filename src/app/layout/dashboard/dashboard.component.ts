@@ -51,9 +51,17 @@ export class DashboardComponent implements OnInit {
   ]
   }
 
+  showModal = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onViewAllClick(){
+    this.showModal = !this.showModal
+  }
+
+  toggleModal(){
+    this.showModal = !this.showModal
+  }
 }
